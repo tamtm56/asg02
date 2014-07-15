@@ -1,9 +1,9 @@
 package oop.asg02;
 
-public class BigInteger
+public class BigInteger // Gioi han do dai cua kieu long
 {
 	private long value;
-    public BigInteger(int init) 
+    public BigInteger(long init) 
 	{
         value = init;
     }
@@ -32,7 +32,8 @@ public class BigInteger
 	{
 		long result;
 		result = this.value + other.value;
-		return new BigInteger(result); 
+		BigInteger sum = new BigInteger(result);
+		return sum;
     }
 
     public BigInteger subtract(BigInteger other) 
@@ -41,4 +42,19 @@ public class BigInteger
 		result = this.value - other.value;
 		return new BigInteger(result); 
     }
+	
+	public int compareTo(BigInteger other)
+	{
+		if (this.toLong() > other.toLong()) return 1;
+		else
+		{
+			if (this.toLong() < other.toLong()) return -1;
+			else return 0;
+		}
+	}
+	
+	public BigInteger clone()
+	{
+		return new BigInteger(this.toString());
+	}
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="1" time="0.041" errors="4" skipped="0" tests="11" name="oop.asg02.BigIntegerTest">
+<testsuite failures="1" time="0.036" errors="7" skipped="0" tests="11" name="oop.asg02.BigIntegerTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_51\jre\bin"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="E:\Courses\OOP2014ss\asg02"/>
+    <property name="user.dir" value="E:\Courses\OOP2014ss\MyAsg\asg02"/>
     <property name="java.runtime.version" value="1.7.0_51-b13"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_51\jre\lib\endorsed"/>
@@ -61,14 +61,80 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="0.004" classname="oop.asg02.BigIntegerTest" name="testInequality"/>
-  <testcase time="0" classname="oop.asg02.BigIntegerTest" name="testCreateBigIntegerFromInt"/>
-  <testcase time="0.011" classname="oop.asg02.BigIntegerTest" name="testSubtractionWithoutCarryOn">
+  <testcase time="0.018" classname="oop.asg02.BigIntegerTest" name="testInequality">
+    <error message="oop.asg02.BigInteger.&lt;init&gt;(I)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: oop.asg02.BigInteger.&lt;init&gt;(I)V
+	at oop.asg02.BigIntegerTest.testInequality(BigIntegerTest.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase time="0" classname="oop.asg02.BigIntegerTest" name="testCreateBigIntegerFromInt">
+    <error message="oop.asg02.BigInteger.&lt;init&gt;(I)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: oop.asg02.BigInteger.&lt;init&gt;(I)V
+	at oop.asg02.BigIntegerTest.testCreateBigIntegerFromInt(BigIntegerTest.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase time="0.017" classname="oop.asg02.BigIntegerTest" name="testSubtractionWithoutCarryOn">
     <error message="For input string: &quot;111111111111111111111&quot;" type="java.lang.NumberFormatException">java.lang.NumberFormatException: For input string: &quot;111111111111111111111&quot;
 	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.lang.Integer.parseInt(Integer.java:495)
-	at java.lang.Integer.valueOf(Integer.java:556)
-	at java.lang.Integer.decode(Integer.java:984)
+	at java.lang.Long.parseLong(Long.java:444)
+	at java.lang.Long.valueOf(Long.java:513)
+	at java.lang.Long.decode(Long.java:665)
 	at oop.asg02.BigInteger.&lt;init&gt;(BigInteger.java:13)
 	at oop.asg02.BigIntegerTest.testSubtractionWithoutCarryOn(BigIntegerTest.java:89)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -103,12 +169,12 @@
 </error>
   </testcase>
   <testcase time="0" classname="oop.asg02.BigIntegerTest" name="testCreateBigIntegerFromStringWithAllZeros"/>
-  <testcase time="0.01" classname="oop.asg02.BigIntegerTest" name="testAdditionWithCarryOn">
+  <testcase time="0" classname="oop.asg02.BigIntegerTest" name="testAdditionWithCarryOn">
     <error message="For input string: &quot;111111111111111111111&quot;" type="java.lang.NumberFormatException">java.lang.NumberFormatException: For input string: &quot;111111111111111111111&quot;
 	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.lang.Integer.parseInt(Integer.java:495)
-	at java.lang.Integer.valueOf(Integer.java:556)
-	at java.lang.Integer.decode(Integer.java:984)
+	at java.lang.Long.parseLong(Long.java:444)
+	at java.lang.Long.valueOf(Long.java:513)
+	at java.lang.Long.decode(Long.java:665)
 	at oop.asg02.BigInteger.&lt;init&gt;(BigInteger.java:13)
 	at oop.asg02.BigIntegerTest.testAdditionWithCarryOn(BigIntegerTest.java:79)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -142,12 +208,12 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase time="0.001" classname="oop.asg02.BigIntegerTest" name="testAdditionWithoutCarryOn">
+  <testcase time="0" classname="oop.asg02.BigIntegerTest" name="testAdditionWithoutCarryOn">
     <error message="For input string: &quot;111111111111111111111&quot;" type="java.lang.NumberFormatException">java.lang.NumberFormatException: For input string: &quot;111111111111111111111&quot;
 	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.lang.Integer.parseInt(Integer.java:495)
-	at java.lang.Integer.valueOf(Integer.java:556)
-	at java.lang.Integer.decode(Integer.java:984)
+	at java.lang.Long.parseLong(Long.java:444)
+	at java.lang.Long.valueOf(Long.java:513)
+	at java.lang.Long.decode(Long.java:665)
 	at oop.asg02.BigInteger.&lt;init&gt;(BigInteger.java:13)
 	at oop.asg02.BigIntegerTest.testAdditionWithoutCarryOn(BigIntegerTest.java:69)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -181,12 +247,12 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase time="0.001" classname="oop.asg02.BigIntegerTest" name="testSubtractionWithCarryOn">
+  <testcase time="0" classname="oop.asg02.BigIntegerTest" name="testSubtractionWithCarryOn">
     <error message="For input string: &quot;111111111111111111111&quot;" type="java.lang.NumberFormatException">java.lang.NumberFormatException: For input string: &quot;111111111111111111111&quot;
 	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.lang.Integer.parseInt(Integer.java:495)
-	at java.lang.Integer.valueOf(Integer.java:556)
-	at java.lang.Integer.decode(Integer.java:984)
+	at java.lang.Long.parseLong(Long.java:444)
+	at java.lang.Long.valueOf(Long.java:513)
+	at java.lang.Long.decode(Long.java:665)
 	at oop.asg02.BigInteger.&lt;init&gt;(BigInteger.java:13)
 	at oop.asg02.BigIntegerTest.testSubtractionWithCarryOn(BigIntegerTest.java:99)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -220,9 +286,42 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
   </testcase>
-  <testcase time="0.013" classname="oop.asg02.BigIntegerTest" name="testCreateBigIntegerFromStringWithAllButUnitZeros"/>
+  <testcase time="0" classname="oop.asg02.BigIntegerTest" name="testCreateBigIntegerFromStringWithAllButUnitZeros"/>
   <testcase time="0" classname="oop.asg02.BigIntegerTest" name="testConvertToLongWhenNotOverRange"/>
-  <testcase time="0" classname="oop.asg02.BigIntegerTest" name="testEquality"/>
+  <testcase time="0" classname="oop.asg02.BigIntegerTest" name="testEquality">
+    <error message="oop.asg02.BigInteger.&lt;init&gt;(I)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: oop.asg02.BigInteger.&lt;init&gt;(I)V
+	at oop.asg02.BigIntegerTest.testEquality(BigIntegerTest.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
   <testcase time="0.001" classname="oop.asg02.BigIntegerTest" name="testCreateBigIntegerFromStringWithLeadingZero">
     <failure message="expected:&lt;[10]&gt; but was:&lt;[8]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[10]&gt; but was:&lt;[8]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
